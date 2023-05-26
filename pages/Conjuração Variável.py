@@ -15,4 +15,5 @@ with st.spinner('Wait for it...'):
     time.sleep(1)
     if conj_var < 0.0000:
         conj_var = 0.0000
-    st.write(conj_var)
+   
+st.write(conj_var)
