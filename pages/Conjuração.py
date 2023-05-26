@@ -44,3 +44,5 @@ with st.container():
     st.write(conj_var)
     st.write('Tempo de Conjuração Fixa (s)')
     st.write(conj_fixa)
+    st.write('Tempo de Conjuração (s)')
+    st.write(conj_var + conj_fixa)
