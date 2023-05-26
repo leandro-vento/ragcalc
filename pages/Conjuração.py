@@ -3,6 +3,7 @@ import math
 import time
 
 col1, col2 = st.columns(2)
+col1t = st.columns(1)
 
 with st.container():
     with col1:
@@ -26,4 +27,6 @@ with st.container():
         st.title('Conjuração Fixa')
         st.write('Preencha abaixo os dados para obter o tempo de conjuração variável que a habilidade irá ficar após redução por equipamentos e atributos.')
 
-
+with st.container():
+    with col1t:
+        st.title('Conjuração Total')
