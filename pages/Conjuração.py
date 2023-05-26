@@ -19,14 +19,11 @@ with st.container():
         reducao_conj_var_perc = st.number_input('Redução de Conjuração Variável por Equipamentos (%)', min_value = 0.00, max_value = 100.00, value = 0.00, step = 0.01)
         atr_dex = st.number_input('Destreza', min_value = 1, max_value = 500, value = 100, step = 1)
         atr_int = st.number_input('Inteligência', min_value = 1, max_value = 500, value = 100, step = 1)
-        st.write('Tempo de Conjuração Variável (s)')
         with st.spinner('Wait for it...'):
             conj_var = round(tempo_conj_var * (1 - math.sqrt((atr_dex * 2 + atr_int) / 530)) * (1 - reducao_conj_var_perc / 100), 4)
             time.sleep(1)
             if conj_var < 0.0000:
                 conj_var = 0.0000
-
-        st.write(conj_var)
 
     with col2:
         st.title('Conjuração Fixa')
@@ -34,14 +31,16 @@ with st.container():
         tempo_conj_fixa = st.number_input('Tempo da Conjuração Fixa (s)', min_value = 0.00, max_value = 100.00, value = 1.00, step = 0.01)
         reducao_conj_fixa_perc = st.number_input('Redução de Conjuração Fixa por Equipamentos e Cartas (%)', min_value = 0.00, max_value = 100.00, value = 0.00, step = 0.01)
         reducao_conj_fixa_valor = st.number_input('Redução de Conjuração Fixa por Equipamentos e Cartas (s)', min_value = 0.00, max_value = 100.00, value = 0.00, step = 0.01)
-        st.write('Tempo de Conjuração Fixa (s)')
+        
         with st.spinner('Wait for it...'):
             conj_fixa = round((tempo_conj_fixa - reducao_conj_fixa_valor) * (1 - reducao_conj_fixa_perc / 100), 4)
             time.sleep(1)
             if conj_fixa < 0.0000:
                 conj_fixa = 0.0000
 
-        st.write(conj_fixa)
-
 with st.container():
     st.title('Conjuração Total')
+    st.write('Tempo de Conjuração Variável (s)')
+    st.write(conj_var)
+    st.write('Tempo de Conjuração Fixa (s)')
+    st.write(conj_fixa)
