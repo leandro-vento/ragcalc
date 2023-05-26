@@ -21,7 +21,6 @@ with st.container():
         atr_int = st.number_input('Inteligência', min_value = 1, max_value = 500, value = 100, step = 1)
         with st.spinner('Wait for it...'):
             conj_var = round(tempo_conj_var * (1 - math.sqrt((atr_dex * 2 + atr_int) / 530)) * (1 - reducao_conj_var_perc / 100), 4)
-            time.sleep(1)
             if conj_var < 0.0000:
                 conj_var = 0.0000
 
@@ -34,7 +33,6 @@ with st.container():
         
         with st.spinner('Wait for it...'):
             conj_fixa = round((tempo_conj_fixa - reducao_conj_fixa_valor) * (1 - reducao_conj_fixa_perc / 100), 4)
-            time.sleep(1)
             if conj_fixa < 0.0000:
                 conj_fixa = 0.0000
 
