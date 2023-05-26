@@ -12,7 +12,7 @@ st.write('Tempo de Conjuração Variável (s)')
 
 with st.spinner('Wait for it...'):
     conj_var = round(tempo_conj_var * (1 - math.sqrt((atr_dex * 2 + atr_int) / 530)) * (1 - reducao_conj_var_perc / 100), 4)
-    sleep(1)
+    time.sleep(1)
     if conj_var < 0.0000:
         conj_var = 0.0000
     st.write(conj_var)
