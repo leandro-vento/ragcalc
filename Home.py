@@ -11,4 +11,3 @@ with open('style.css') as f:
 st.header('Seja bem-vindo ao RagCalc')
 st.markdown('#')
 st.markdown('''---''')
-st.button('Teste')
