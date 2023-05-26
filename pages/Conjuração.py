@@ -2,6 +2,13 @@ import streamlit as st
 import math
 import time
 
+st.set_page_config(
+  page_title='RagCalc - Conjuração',
+  page_icon=':bar_chart:',
+  layout='wide',
+  initial_sidebar_state='collapsed'
+)
+
 col1, col2 = st.columns(2)
 
 with st.container():
