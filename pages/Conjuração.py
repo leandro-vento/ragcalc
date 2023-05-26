@@ -3,7 +3,7 @@ import math
 import time
 
 col1, col2 = st.columns(2)
-ct1, ct2 = st.container(2)
+ct1, ct2 = st.container()
 
 with ct1:
     with col1:
