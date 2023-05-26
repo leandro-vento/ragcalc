@@ -28,7 +28,7 @@ with st.container():
         st.title('Conjuração Fixa')
         st.write('Preencha abaixo os dados para obter o tempo de conjuração fixa que a habilidade irá ficar após a redução por equipamentos e atributos.')
         tempo_conj_fixa = st.number_input('Tempo da Conjuração Fixa (s)', min_value = 0.00, max_value = 100.00, value = 1.00, step = 0.01)
-        reducao_conj_fixa_perc = st.number_input('Redução de Conjuração Fixa por Equipamentos e Cartas (%)', min_value = 0.00, max_value = 100.00, value = 0.00, step = 0.01)
+        reducao_conj_fixa_perc = st.number_input('Redução de Conjuração Fixa por Equipamentos e Cartas (maior %)', min_value = 0.00, max_value = 100.00, value = 0.00, step = 0.01)
         reducao_conj_fixa_valor = st.number_input('Redução de Conjuração Fixa por Equipamentos e Cartas (s)', min_value = 0.00, max_value = 100.00, value = 0.00, step = 0.01)
         
         with st.spinner('Wait for it...'):
