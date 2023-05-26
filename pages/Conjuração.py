@@ -26,5 +26,4 @@ with col2:
     st.title('Conjuração Fixa')
     st.write('Preencha abaixo os dados para obter o tempo de conjuração variável que a habilidade irá ficar após redução por equipamentos e atributos.')
 
-with col1t:
-    st.title('Conjuração Total')
+
