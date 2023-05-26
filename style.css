@@ -1,3 +1,7 @@
 footer {
  visibility: hidden; 
 }
+
+.stButton > button {
+ background-color:#c10000; 
+}
