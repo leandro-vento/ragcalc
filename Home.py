@@ -8,6 +8,6 @@ st.set_page_config(
 with open('style.css') as f:
   st.markdown('<style>{f.read()}</style>', unsafe_allow_html = True)
 
-st.header('Seja bem-vindo ao RagCalc')
+st.header('Seja bem-vindo ao RagCalc!')
 st.markdown('#')
 st.markdown('''---''')
