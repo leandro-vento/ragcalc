@@ -1,7 +1,11 @@
 footer {
- visibility: hidden; 
+ visibility:hidden; 
 }
 
 .stButton {
  background-color:#c10000; 
+}
+
+.stToolbar {
+ visibility:hidden; 
 }
