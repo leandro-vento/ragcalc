@@ -7,7 +7,7 @@ st.set_page_config(
   initial_sidebar_state='collapsed'
 )
 with open('style.css') as f:
-  st.markdown('<style>{f.read()}</style>', unsafe_allow_html = True)
+  st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
 st.header('Seja bem-vindo ao RagCalc!')
 st.markdown('#')
