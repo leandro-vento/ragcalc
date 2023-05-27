@@ -14,7 +14,7 @@ def add_logo():
     st.markdown(
         """
         <style>
-            [data-testid="stSidebarNav"] {
+            .css-79elbk {
                 content: "My Company Name";
                 margin-left: 20px;
                 margin-top: 20px;
