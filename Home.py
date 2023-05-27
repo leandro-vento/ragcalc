@@ -10,21 +10,16 @@ st.set_page_config(
 with open('css/style.css') as f:
   st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
-def add_logo():
-    st.markdown(
-        """
-        <style>
-            [data-testid="stSidebarNav"]::before {
-                content: "RagCalc";
-                margin-left: 20px;
-                margin-top: 20px;
-                font-size: 30px;
-                position: relative;
-                top: 100px;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
+with st.sidebar:
+    choose = option_menu("App Gallery", ["About", "Photo Editing", "Project Planning", "Python e-Course", "Contact"],
+                         icons=['house', 'camera fill', 'kanban', 'book','person lines fill'],
+                         menu_icon="app-indicator", default_index=0,
+                         styles={
+        "container": {"padding": "5!important", "background-color": "#fafafa"},
+        "icon": {"color": "orange", "font-size": "25px"}, 
+        "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+        "nav-link-selected": {"background-color": "#02ab21"},
+                                }
     )
 
 st.header('Seja bem-vindo ao RagCalc!')
