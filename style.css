@@ -6,6 +6,6 @@ stButton {
  background-color:#c10000; 
 }
 
-stToolbar {
+div.stToolbar {
  visibility:hidden; 
 }
