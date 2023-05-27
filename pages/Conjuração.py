@@ -10,6 +10,7 @@ st.set_page_config(
 )
 
 col1, col2 = st.columns(2)
+cl1, cl2, cl3 = st.columns(3)
 
 with st.container():
     with col1:
@@ -37,10 +38,15 @@ with st.container():
                 conj_fixa = 0.0000
 
 with st.container():
-    st.title('Conjuração Total')
-    st.write('Tempo de Conjuração Variável (s)')
-    st.write(conj_var)
-    st.write('Tempo de Conjuração Fixa (s)')
-    st.write(conj_fixa)
-    st.write('Tempo de Conjuração (s)')
-    st.write(conj_var + conj_fixa)
+    with cl1:
+        st.title('')    
+    with cl2:
+        st.title('Conjuração Total')
+        st.write('Tempo de Conjuração Variável (s)')
+        st.write(conj_var)
+        st.write('Tempo de Conjuração Fixa (s)')
+        st.write(conj_fixa)
+        st.write('Tempo de Conjuração (s)')
+        st.write(conj_var + conj_fixa)
+    with cl3:
+        st.title('') 
