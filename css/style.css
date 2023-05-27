@@ -1,3 +1,7 @@
 footer {
- visibility:hidden; 
+    visibility:hidden; 
+}
+
+.stToolbar {
+    visibility:hidden; 
 }
