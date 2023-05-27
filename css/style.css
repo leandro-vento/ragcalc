@@ -9,3 +9,7 @@ footer {
 a.viewerBadge_container__1QSob {
     visibility:hidden; 
 }
+
+code {
+    background:none;
+}
