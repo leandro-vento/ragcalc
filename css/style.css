@@ -1,16 +1,20 @@
 footer {
-    visibility:hidden; 
+    visibility:hidden;
 }
 
 .css-14xtw13 {
-    visibility:hidden; 
+    visibility:hidden;
 }
 
 a.viewerBadge_container__1QSob {
-    visibility:hidden; 
+    visibility:hidden;
 }
 
 code {
     background:none;
     color: black;
+}
+
+stDecoration {
+    visibility:hidden;
 }
