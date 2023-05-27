@@ -10,23 +10,6 @@ st.set_page_config(
 with open('css/style.css') as f:
   st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
-def add_logo():
-    st.markdown(
-        """
-        <style>
-            .css-6qob1r {
-                content: "My Company Name";
-                margin-left: 20px;
-                margin-top: 20px;
-                font-size: 30px;
-                position: relative;
-                top: 100px;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
 st.header('Seja bem-vindo ao RagCalc!')
 st.markdown('#')
 st.markdown('''---''')
