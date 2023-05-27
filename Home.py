@@ -14,7 +14,7 @@ def add_logo():
     st.markdown(
         """
         <style>
-            .css-79elbk {
+            .css-6qob1r {
                 content: "My Company Name";
                 margin-left: 20px;
                 margin-top: 20px;
