@@ -12,5 +12,3 @@ with open('css/style.css') as f:
 
 st.header('Seja bem-vindo ao RagCalc!')
 st.markdown('#')
-
-st.sidebar.header("RagCalc")
