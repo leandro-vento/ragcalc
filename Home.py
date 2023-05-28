@@ -15,4 +15,5 @@ st.markdown('#')
 st.markdown('''---''')
 
 with st.sidebar:
-  Projeto = st.selectbox('Projeto', ['INFRA', 'GOINFRA'])
+  projeto = st.selectbox('Projeto', ['INFRA', 'GOINFRA'])
+  referencia = st.selectbox('Referência', ['INFRA', 'GOINFRA'])
