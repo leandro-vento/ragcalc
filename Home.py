@@ -14,5 +14,5 @@ st.header('Seja bem-vindo ao RagCalc!')
 st.markdown('#')
 st.markdown('''---''')
 
-with st.sidebar():
+with st.sidebar:
   Projeto = st.selectbox('Projeto', ['INFRA', 'GOINFRA'])
