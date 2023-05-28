@@ -4,7 +4,12 @@ st.set_page_config(
   page_title='RagCalc',
   page_icon=':bar_chart:',
   layout='wide',
-  initial_sidebar_state='collapsed'
+  initial_sidebar_state='collapsed',
+  menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
 )
 
 with open('css/style.css') as f:
