@@ -16,4 +16,7 @@ st.markdown('''---''')
 
 with st.sidebar:
   projeto = st.selectbox('Projeto', ['INFRA', 'GOINFRA'])
-  referencia = st.selectbox('Referência', ['INFRA', 'GOINFRA'])
+  if (projeto = 'INFRA'):
+    op_ref = ['01/2023']
+  referencia = st.selectbox('Referência', op_ref)
+    
