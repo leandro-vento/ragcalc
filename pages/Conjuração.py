@@ -12,6 +12,7 @@ st.set_page_config(
 with open('css/style.css') as f:
   st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
+ct = st.columns(1)
 col1, col2 = st.columns(2)
 cl1, cl2, cl3 = st.columns(3)
 
@@ -53,9 +54,11 @@ with st.container():
         st.write(conj_var + conj_fixa)
     with cl3:
         st.title('')
-
-st.divider()
         
+with st.container():
+    with ct:
+        st.title('')
+
 with st.container():
     with col1:
         st.title('Conjuração Variável')
