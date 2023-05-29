@@ -12,7 +12,7 @@ st.set_page_config(
 with open('css/style.css') as f:
   st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
-ct = st.columns(1)
+ct1, ct2 = st.columns(2)
 col1, col2 = st.columns(2)
 cl1, cl2, cl3 = st.columns(3)
 
@@ -55,14 +55,8 @@ with st.container():
     with cl3:
         st.title('')
 
-with st.empty():
-    for seconds in range(60):
-        st.write(f"⏳ {seconds} seconds have passed")
-        time.sleep(1)
-    st.write("✔️ 1 minute over!")
-
 with st.container():
-    with col1:
+    with ct1:
         st.title('Conjuração Variável')
         st.write('Preencha abaixo os dados para obter o tempo de conjuração variável que a habilidade irá ficar após a redução por equipamentos e atributos.')
         tempo_conj_var1 = st.number_input('Tempo da Conjuração Variável 1(s)', min_value = 0.00, max_value = 100.00, value = 1.00, step = 0.01)
@@ -74,7 +68,7 @@ with st.container():
             if conj_var1 < 0.0000:
                 conj_var1 = 0.0000
 
-    with col2:
+    with ct2:
         st.title('Conjuração Fixa')
         st.write('Preencha abaixo os dados para obter o tempo de conjuração fixa que a habilidade irá ficar após a redução por equipamentos e atributos.')
         tempo_conj_fixa1 = st.number_input('Tempo da 11Conjuração Fixa (s)', min_value = 0.00, max_value = 100.00, value = 1.00, step = 0.01)
