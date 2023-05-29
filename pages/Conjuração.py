@@ -18,7 +18,7 @@ cl1, cl2, cl3 = st.columns(3)
 with st.container():
   with st.container():
       with col1:
-          st.title('Conjuração Variável')
+          st.title('Conjuração Variáaaaaaaavel')
           st.write('Preencha abaixo os dados para obter o tempo de conjuração variável que a habilidade irá ficar após a redução por equipamentos e atributos.')
           tempo_conj_var = st.number_input('Tempo da Conjuração Variável (s)', min_value = 0.00, max_value = 100.00, value = 1.00, step = 0.01)
           reducao_conj_var_perc = st.number_input('Redução de Conjuração Variável por Equipamentos (%)', min_value = 0.00, max_value = 100.00, value = 0.00, step = 0.01)
