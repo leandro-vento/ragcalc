@@ -55,7 +55,10 @@ with st.container():
           st.write(conj_var + conj_fixa)
       with cl3:
           st.title('')
-        
+       
+with st.container():
+  st.empty()
+      
 with st.container():
   with st.container():
       with col1:
