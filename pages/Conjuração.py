@@ -54,28 +54,3 @@ with st.container():
         st.write(conj_var + conj_fixa)
     with cl3:
         st.title('')
-
-with st.container():
-    with ct1:
-        st.title('Conjuração Variável')
-        st.write('Preencha abaixo os dados para obter o tempo de conjuração variável que a habilidade irá ficar após a redução por equipamentos e atributos.')
-        tempo_conj_var1 = st.number_input('Tempo da Conjuração Variável 1(s)', min_value = 0.00, max_value = 100.00, value = 1.00, step = 0.01)
-        reducao_conj_var_perc1 = st.number_input('Redução de Con11juração Variável por Equipamentos (%)', min_value = 0.00, max_value = 100.00, value = 0.00, step = 0.01)
-        atr_dex1 = st.number_input('Destreza (Base11 + Bônus)', min_value = 1, max_value = 500, value = 100, step = 1)
-        atr_int1 = st.number_input('Inteligência (11Base + Bônus)', min_value = 1, max_value = 500, value = 100, step = 1)
-        with st.spinner('Wait for it...'):
-            conj_var1 = round(tempo_conj_var * (1 - math.sqrt((atr_dex * 2 + atr_int) / 530)) * (1 - reducao_conj_var_perc / 100), 4)
-            if conj_var1 < 0.0000:
-                conj_var1 = 0.0000
-
-    with ct2:
-        st.title('Conjuração Fixa')
-        st.write('Preencha abaixo os dados para obter o tempo de conjuração fixa que a habilidade irá ficar após a redução por equipamentos e atributos.')
-        tempo_conj_fixa1 = st.number_input('Tempo da 11Conjuração Fixa (s)', min_value = 0.00, max_value = 100.00, value = 1.00, step = 0.01)
-        reducao_conj_fixa_perc1 = st.number_input('Redu11ção de Conjuração Fixa por Equipamentos e Cartas (maior %)', min_value = 0.00, max_value = 100.00, value = 0.00, step = 0.01)
-        reducao_conj_fixa_valor1 = st.number_input('Reduç111ão de Conjuração Fixa por Equipamentos e Cartas (s)', min_value = 0.00, max_value = 100.00, value = 0.00, step = 0.01)
-
-        with st.spinner('Wait for it...'):
-            conj_fixa1 = round((tempo_conj_fixa - reducao_conj_fixa_valor) * (1 - reducao_conj_fixa_perc / 100), 4)
-            if conj_fixa1 < 0.0000:
-                conj_fixa1 = 0.0000
