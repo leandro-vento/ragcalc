@@ -25,6 +25,7 @@ with st.container():
         atr_dex = st.number_input('Destreza (Base + Bônus)', min_value = 1, max_value = 500, value = 100, step = 1)
         atr_int = st.number_input('Inteligência (Base + Bônus)', min_value = 1, max_value = 500, value = 100, step = 1)
         with st.spinner('Wait for it...'):
+            time.sleep(1)
             conj_var = round(tempo_conj_var * (1 - math.sqrt((atr_dex * 2 + atr_int) / 530)) * (1 - reducao_conj_var_perc / 100), 4)
             if conj_var < 0.0000:
                 conj_var = 0.0000
