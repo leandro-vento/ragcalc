@@ -15,14 +15,6 @@ if st.session_state['login'] == 'nao_logado':
         if resposta_login == True:
             con = sqlite3.connect("tutorial.db")
             cur = con.cursor()
-            cur.execute("CREATE TABLE login (nome, usuario, senha)")
-            data = [
-                ("Leandro", "leandro", "123"),
-                ("teste", "teste", "123"),
-                ("teste2", "teste2", "123"),
-            ]
-            cur.executemany("INSERT INTO login VALUES(?, ?, ?)", data)
-            con.commit()
             res = cur.execute("SELECT * FROM login WHERE usuario = '" + usuario + "' AND senha = '" + senha + "'")
             res = res.fetchall()
 
