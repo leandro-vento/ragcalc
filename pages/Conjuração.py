@@ -4,7 +4,7 @@ import time
 import sqlite3
 
 if 'login' not in st.session_state:
-    st.session_state['login'] = 'nao_logado'
+    st.session_state['login'] = 'logado'
 
 st.set_page_config(
   page_title='RagCalc - Conjuração',

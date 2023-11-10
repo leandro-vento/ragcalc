@@ -2,7 +2,7 @@ import sqlite3
 import streamlit as st
 
 if 'login' not in st.session_state:
-    st.session_state['login'] = 'nao_logado'
+    st.session_state['login'] = 'logado'
 
 if st.session_state['login'] == 'nao_logado':
     with st.form("my_form"):
